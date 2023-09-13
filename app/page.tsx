@@ -76,7 +76,7 @@ export default function Home() {
 
           <div className=" min-height-mobile  md:min-height md:flex items-center  ">
             <div className="mx-auto  max-w-[344px] md:max-w-[800px] text-center md:text-left   ">
-              <h1 className=" text-white text-[46px] mt-[184px] md:mt-0  md:text-[110px] font-black uppercase animate-text  md:leading-[120px] mb-2 md:mb-6">
+              <h1 className=" text-white text-[46px] mt-[184px] md:mt-0  md:text-[110px] font-black uppercase animate-text leading-[57px] md:leading-[120px] mb-2 md:mb-6">
                 Enfrentá tus límites
               </h1>
               <p className="text-[10px]  md:text-[20px] uppercase text-dark-green animate-subt">
