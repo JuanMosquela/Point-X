@@ -46,7 +46,7 @@ const PlanCard = ({ plan }: { plan: PlanProps }) => {
         >
           <CustomButton
             text="Comprar"
-            style="w-full border-green border-2 button text-white mb-4 duration-300"
+            style="w-[110px] h-[32px] text-[12px] border-green border-2 rounded-md font-semibold text-white mb-4 duration-300"
           />
         </div>
         <ul className="space-y-2 pt-6 ">

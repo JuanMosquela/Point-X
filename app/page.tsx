@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <section className="overflow-x-hidden">
       <Element name="home">
-        <section className="container mb-10 ">
+        <section className="container ">
           <Navbar />
 
           <nav className="fixed bottom-0 left-0  w-full z-50">
@@ -74,9 +74,9 @@ export default function Home() {
             </div>
           </nav>
 
-          <div className=" min-height-mobile  md:min-height md:flex items-center  ">
+          <div className=" min-height-mobile   md:min-height md:flex items-center  ">
             <div className="mx-auto  max-w-[344px] md:max-w-[800px] text-center md:text-left   ">
-              <h1 className=" text-white text-[46px] mt-[184px] md:mt-0  md:text-[110px] font-black uppercase animate-text leading-[57px] md:leading-[120px] mb-2 md:mb-6">
+              <h1 className=" text-white text-[46px] mt-[184px] md:mt-0  md:text-[110px] font-black uppercase animate-text leading-[57px] md:leading-[120px] mb-[8px] md:mb-6">
                 Enfrentá tus límites
               </h1>
               <p className="text-[10px]  md:text-[20px] uppercase text-dark-green animate-subt">
@@ -92,7 +92,7 @@ export default function Home() {
                 height={900}
               />
               <Image
-                className="animate-image mt-10 "
+                className="animate-image mt-2 "
                 src="/hero.png"
                 alt="models"
                 width={748}
