@@ -9,24 +9,24 @@ import { carruselImages } from "@/constants";
 import { useEffect, useState } from "react";
 
 const SwiperContainer = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    // Función para actualizar el ancho de la ventana cuando cambie el tamaño de la pantalla
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   // Función para actualizar el ancho de la ventana cuando cambie el tamaño de la pantalla
+  //   const handleResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
 
-    // Agregar un evento para escuchar los cambios en el tamaño de la pantalla
-    window.addEventListener("resize", handleResize);
+  //   // Agregar un evento para escuchar los cambios en el tamaño de la pantalla
+  //   window.addEventListener("resize", handleResize);
 
-    // Limpieza del evento cuando se desmonte el componente
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); // El segundo argumento [] asegura que el efecto se ejecute solo una vez al montar el componente
+  //   // Limpieza del evento cuando se desmonte el componente
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []); // El segundo argumento [] asegura que el efecto se ejecute solo una vez al montar el componente
 
-  console.log(windowWidth);
+  // console.log(windowWidth);
   return (
     <section>
       <Swiper
@@ -65,7 +65,7 @@ const SwiperContainer = () => {
                     width={448}
                     height={468}
                     className={` ${
-                      (windowWidth < 500 ? isActive : isNext)
+                      isActive
                         ? "mt-2 p-4"
                         : isActive
                         ? "ml-[-20px] mt-[-40px]"
@@ -80,9 +80,7 @@ const SwiperContainer = () => {
 
                   <p
                     className={`${
-                      (windowWidth < 500 ? isActive : isNext)
-                        ? "opacity-90"
-                        : "opacity-0"
+                      isActive ? "opacity-90" : "opacity-0"
                     }  delay-300  duration-100 text-[14px]`}
                   >
                     {item.text}
