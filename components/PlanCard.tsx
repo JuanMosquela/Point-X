@@ -33,7 +33,7 @@ const PlanCard = ({ plan }: { plan: PlanProps }) => {
     >
       <div className="flex flex-col ">
         <span className="text-green capitalize text-sm">pase</span>
-        <h4 className="text-white font-black text-4xl uppercase mb-2 ">
+        <h4 className="text-white font-black text-[40px] uppercase  md:mb-2 ">
           {plan.type}
         </h4>
         <span className="text-white font-thin text-3xl uppercase mb-6">

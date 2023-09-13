@@ -19,8 +19,8 @@ type AboutProps = {
 
 const About = ({ title, text, image, icons }: AboutProps) => {
   return (
-    <section className="container min-h-screen  flex items-center justify-center ">
-      <div className="flex justify-center  flex-wrap  gap-8 text-center md:text-left md:gap-[110px]">
+    <section className="container px-2 min-h-screen  flex  items-center justify-center pb-[86px] ">
+      <div className="flex  flex-col-reverse justify-center  flex-wrap  gap-8 text-center md:text-left md:gap-[110px]">
         <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
@@ -33,7 +33,7 @@ const About = ({ title, text, image, icons }: AboutProps) => {
             width={600}
             height={400}
             alt="gym"
-            className="absolute bottom-0 md:bottom-8 left-0 md:left-8 object-fit "
+            className="absolute bottom-[-32px] md:bottom-8 left-0 md:left-8 object-fit "
           />
         </motion.div>
 
@@ -44,12 +44,12 @@ const About = ({ title, text, image, icons }: AboutProps) => {
           // transition={{ ease: "easeIn", duration: 0.2, delay: 0.6 }}
           className="max-w-[600px] "
         >
-          <div className="flex items-center gap-2 md:gap-8 mb-8">
-            <h3 className=" text-3xl md:text-4xl text-white font-black    uppercase">
+          <div className="flex flex-col md:flex-row justify-center items-center  md:gap-8 mb-4 md:mb-8  ">
+            <h3 className=" text-[20px] md:text-4xl text-white font-black mb-4 md:mb-0  uppercase">
               {title}
             </h3>
             {icons && (
-              <ul className="flex  md:gap-3 items-center">
+              <ul className="flex   md:gap-3 items-center">
                 {icons.map((item: any, i) => (
                   <motion.li
                     key={i}
@@ -65,7 +65,7 @@ const About = ({ title, text, image, icons }: AboutProps) => {
               </ul>
             )}
           </div>
-          <p className="text-white text-[16px] text-justify leading-7 mb-10">
+          <p className="text-white  text-[12px] max-w-[250px] mx-auto font-semibold  text-center md:text-justify leading-7 md:mb-[20px] mb-10">
             {text}
           </p>
           <Image src="/group.png" width={468} height={285} alt="lines" />
