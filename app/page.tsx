@@ -79,7 +79,7 @@ export default function Home() {
               <h1 className=" text-white text-[44px] mt-40 md:mt-0  md:text-[110px] font-black uppercase animate-text  md:leading-[120px] mb-2 md:mb-6">
                 Enfrentá tus límites
               </h1>
-              <p className="text-[12px] md:text-md uppercase text-dark-green animate-subt">
+              <p className="text-[10px]  md:text-[20px] uppercase text-dark-green animate-subt">
                 y crece en fuerza, diciplina y motivacion
               </p>
             </div>

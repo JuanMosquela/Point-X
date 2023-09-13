@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <Element name="home">
       <nav className="fixed top-0 left-0 w-full bg-black pt-4 md:pt-10 pb-4 z-50 ">
-        <div className="md:container flex-center flex-col md:flex-row md:justify-between  ">
+        <div className="md:container pt-8 flex-center flex-col md:flex-row md:justify-between  ">
           <Link to="home">
             <span className="text-4xl uppercase font-bold text-white cursor-pointer">
               point-x
